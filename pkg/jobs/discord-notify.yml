@@ -1,0 +1,4 @@
+name: "Discord Notify"
+enabled: true
+frequency: "*/30 * * * *"
+handler: "DiscordNotify"

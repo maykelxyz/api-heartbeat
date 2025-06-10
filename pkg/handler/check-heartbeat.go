@@ -8,7 +8,7 @@ import (
 func CheckAPIHeartbeat(url string, discordWebhookURL string) error {
 	isAlive := api.CheckAPIHeartbeat(url)
 	if !isAlive {
-		discord.SendDiscordMessage(isAlive, discordWebhookURL)
+		discord.SendDiscordHealthEmbedMessage(isAlive, discordWebhookURL)
 	}
 	return nil
 }
