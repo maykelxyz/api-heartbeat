@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api-heartbeat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8888:8888
+    restart: always
+    image: api-heartbeat:${SHA}
+    env_file:
+      - .env
