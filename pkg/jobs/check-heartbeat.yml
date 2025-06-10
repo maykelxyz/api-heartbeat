@@ -1,0 +1,4 @@
+name: "Check API Heartbeat"
+enabled: true
+frequency: "*/1 * * * *" # every 1 minute
+handler: "CheckAPIHeartbeat"
